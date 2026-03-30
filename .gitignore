@@ -1,0 +1,28 @@
+# Environment / secrets
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+venv/
+env/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Downloaded source data (large, reproducible via scripts)
+scripts/data/
+
+# Activation files (large, reproducible via Modal pipeline)
+activations/
+
+# Claude
+.claude/

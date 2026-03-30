@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["id", "technique", "context", "payload", "target_action", "source"],
+  "properties": {
+    "id": {"type": "string", "description": "Unique identifier"},
+    "technique": {"type": "string", "enum": ["naive_override", "context_manipulation", "role_hijacking", "encoding_obfuscation", "payload_splitting", "indirect_nested", "social_engineering", "invisible_text", "ui_spoofing"]},
+    "context": {"type": "string", "description": "Where the injection is embedded (e.g., embedded_webpage, fake_booking_page, html_metadata, css_hidden)"},
+    "payload": {"type": "string", "description": "The actual adversarial prompt text"},
+    "target_action": {"type": "string", "description": "What the attack tries to make the agent do"},
+    "source": {"type": "string", "description": "Where this prompt came from (manual, tensortrust, hackaprompt, etc.)"},
+    "notes": {"type": "string", "description": "Optional notes on effectiveness or context"}
+  }
+}

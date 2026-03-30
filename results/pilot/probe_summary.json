@@ -1,0 +1,23 @@
+{
+  "linear": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "auroc": 1.0
+  },
+  "attention": {
+    "accuracy": 0.95,
+    "precision": 1.0,
+    "recall": 0.9,
+    "f1": 0.9473684210526316,
+    "auroc": 1.0
+  },
+  "combined": {
+    "accuracy": 0.95,
+    "precision": 1.0,
+    "recall": 0.9,
+    "f1": 0.9473684210526316,
+    "auroc": 1.0
+  }
+}
