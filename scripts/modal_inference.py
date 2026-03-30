@@ -273,7 +273,7 @@ class ActivationExtractor:
         with torch.no_grad():
             gen_ids = self.model.generate(
                 **inputs,
-                max_new_tokens=200,
+                max_new_tokens=512,
                 do_sample=False,  # Greedy for reproducibility
                 temperature=1.0,
                 pad_token_id=self.tokenizer.pad_token_id,
